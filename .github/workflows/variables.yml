@@ -1,4 +1,5 @@
 name: Variables
+<<<<<<< HEAD
 on: github_dispatch
 jobs:
   print:
@@ -7,3 +8,13 @@ jobs:
     USERNAME: ${{ vars.USERNAME }}
   steps:
     - run: echo "${USERNAME}"
+=======
+on: workflow_dispatch
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      USERNAME: ${{ vars.USERNAME }}
+    steps:
+      -run: echo "${USERNAME}"
+>>>>>>> f12550199758f091e7915052cef0930b427b86d9
