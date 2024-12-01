@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "${CONTEXT}"
-        enc:
+        env:
           CONTEXT: ${{ toJSON(github) }}
