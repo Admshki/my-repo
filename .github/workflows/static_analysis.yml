@@ -1,6 +1,5 @@
 name: Static analysis
-on:
-  [pull_request, workflow_dispatch]:
+on: [pull_request, workflow_dispatch]
     paths: ['.github/workflows/*.yml', '.github/workflows/*.yaml']
 defaults:
   run:
